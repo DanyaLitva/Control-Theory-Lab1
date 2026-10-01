@@ -338,7 +338,7 @@
         \draw (sum.north west) -- (sum.south east);
     
         % Размещение блоков и точки ответвления
-        \node[block] (Kp) at (2.5,0) {\(K_p\)};
+        \node[block] (Kp) at (2.5,0) {\(\frac{K_i}{p}\)};
         \node[block] (K) at (5.5,0) {\(K\)};
         \node[dot] (dot) at (8,0) {};
     
@@ -388,7 +388,7 @@
             \draw (sum.north west) -- (sum.south east);
         
             % Размещение блока в обратной связи и точки ответвления
-            \node[block] (KKp) at (3,-2) {\(K K_p\)};
+            \node[block] (KKp) at (3,-2) {\(\frac{K_i}{p}\)};
             \node[dot] (dot) at (6,0) {};
         
             % Входные и выходные метки
@@ -410,7 +410,7 @@
 		\caption{Обратная диграмма звеньев с интегрирующим звеном.}
 	\end{figure}
 	
-	Коэффициент передачи $K_{\epsilon\omega_m^*}(p)=\dfrac{p}{p+K_iK}\Rightarrow{}K{\epsilon\omega_m^*}(0)=0$, то есть реакция ошибки при подаче в качестве сигнала функции Хэвисайда — обратиться к 0, то есть исходный коэффициент передачи $K_{int}(p)$ обладает точностью.
+	Коэффициент передачи по ошибке $K_{\epsilon\omega_m^*}(p)=\dfrac{p}{p+K_iK}\Rightarrow{}K{\epsilon\omega_m^*}(0)=0$, обращается в 0 при $p = 0$, откуда следует отсутствие постоянной ошибки при использовании И-регулятора.	
 	
 	\textbf{Точность.} Подстановка $p=0$ показывает, что звено \textbf{обладает точностью} (в смысле реакции на управление).
 	
@@ -831,7 +831,7 @@
 
     \begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.8]{graphic_pi_30v.png}
+		\includegraphics[scale=0.4]{graf_pi_30v.png}
 		\caption{\label{fig:graphic_pi_30v}ПИ-регулятор c ограничением управляющего напряжения 30В}
     \end{figure}
     
